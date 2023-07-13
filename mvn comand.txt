@@ -1,0 +1,47 @@
+-->> After succesfully instalation of the maven in your system 
+
+how to execute the maven project threw the command prompt 
+
+step 1 > open your project locatino to the cmd (D:\eclips\MyProject)
+
+Step2 > first command is : 	mvn validate 
+			-: 	this check that this project is correct.it will 				
+				also tell require file are present in the project 				
+				or not.
+
+	2nd command is 	 : 	mvn clean
+			-:	this command will clean all the unnecesary file
+				from the privious build.
+
+	3rd command is 	 :	mvn compile
+				this will compile all the source code inside my 				
+				project. Mainly from the develpment end.
+
+	4th command is 	 :	mvn test
+			-: 	this will run all the test cases we creat in the 
+				mavenproject. This will we do most of the time 
+				That comand will rull the previous step too.
+				 
+	5th command is 	 : 	mvn package
+			-:	this command will be create a jar or war file for
+				the project.In the form of jar and war we can easily
+				move our project to remote location.this will also 
+				execute all the previous command we done separately.
+		
+	6th command is 	 :	mvn install
+			-:	all the things like done in the previous comand done
+				in this but now all the maven jar file relate to this 
+				project are also come to our local repository.
+				
+	7th command is 	 : 	mvn deploy
+			-:	this comand will deploy the jar file to the remote 
+				repository like : jenkins, tomcat server.  
+
+
+Note : we can give combination of the command like :
+		clean test
+		validate clean
+		validatte clean compile
+etc
+
+	
